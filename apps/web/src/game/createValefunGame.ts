@@ -17,7 +17,7 @@ class ValleyScene extends Phaser.Scene {
     this.add.text(46, 54, "Residential Zone", { color: "#ffffff", fontSize: "18px" });
     this.add.text(width - 230, 40, "River", { color: "#ffffff", fontSize: "18px" });
     this.add.text(60, height - 160, "Farming Zone", { color: "#ffffff", fontSize: "18px" });
-    this.add.text(width / 2 - 80, 24, "VALEFUN WEB PROTOTYPE", { color: "#ffd166", fontSize: "24px", fontStyle: "bold" });
+    this.add.text(width / 2 - 118, 24, "VALEFUN WEB ONBOARDING MVP", { color: "#ffd166", fontSize: "24px", fontStyle: "bold" });
 
     for (let x = 60; x < width - 280; x += 64) {
       for (let y = height - 140; y < height - 40; y += 42) {
@@ -25,7 +25,7 @@ class ValleyScene extends Phaser.Scene {
       }
     }
 
-    this.player = this.add.rectangle(width / 2, height / 2, 28, 34, 0xffd166).setStrokeStyle(2, 0x1b1b1b);
+    this.player = this.add.rectangle(width / 2, height / 2, 28, 34, 0x66d9ff).setStrokeStyle(2, 0x1b1b1b);
     this.cursors = this.input.keyboard?.createCursorKeys();
   }
 

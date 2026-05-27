@@ -1,4 +1,5 @@
 import { GameCanvas } from "@/components/GameCanvas";
+import { OnboardingPanel } from "@/components/OnboardingPanel";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
           <div className="logo">VALEFUN</div>
           <div className="tagline">Live, farm, fish, mine, and build inside a player-owned valley.</div>
         </div>
-        <button className="cta" type="button">Connect Wallet</button>
+        <a className="cta" href="#onboarding">Start</a>
       </header>
 
       <section className="shell">
@@ -17,16 +18,9 @@ export default function Home() {
           <p>
             Web-native rewrite scaffold. This replaces the Godot runtime with a Phaser-powered browser game shell.
           </p>
-          <div className="card">
-            <h2>MVP Systems</h2>
-            <ul>
-              <li>Wallet login</li>
-              <li>Male/female character select</li>
-              <li>Starter house slot</li>
-              <li>Farming, fishing, mining</li>
-              <li>Warehouse selling</li>
-              <li>Realtime multiplayer</li>
-            </ul>
+          <div id="onboarding" className="card">
+            <h2>Player Onboarding</h2>
+            <OnboardingPanel />
           </div>
         </aside>
         <section className="game-wrap">
