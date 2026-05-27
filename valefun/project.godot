@@ -10,9 +10,9 @@ config_version=3
 
 [application]
 
-config/name="Harvest Moon 2.0"
+config/name="Valefun"
 run/main_scene="res://menus/main/MainMenu.tscn"
-boot_splash/image="res://Boot Splash and Icon/Harvest Moon Boot Splash.png"
+boot_splash/image="res://Boot Splash and Icon/Valefun Boot Splash.png"
 config/icon="res://player/animations/idle/Idle Down.png"
 
 [autoload]
