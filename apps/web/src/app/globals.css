@@ -1,0 +1,30 @@
+:root {
+  color-scheme: dark;
+  --bg: #101827;
+  --panel: #182338;
+  --gold: #ffd166;
+  --green: #62c370;
+  --text: #edf6ff;
+  --muted: #9fb3c8;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; background: var(--bg); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+button { font: inherit; }
+.page { min-height: 100vh; display: grid; grid-template-rows: auto 1fr; }
+.hero { padding: 28px 32px; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid rgba(255,255,255,.08); background: rgba(16,24,39,.8); backdrop-filter: blur(8px); }
+.brand { display: flex; flex-direction: column; gap: 4px; }
+.logo { color: var(--gold); font-weight: 900; letter-spacing: .16em; font-size: 28px; }
+.tagline { color: var(--muted); font-size: 14px; }
+.cta { background: var(--gold); color: #271b00; border: 0; border-radius: 12px; padding: 12px 18px; font-weight: 800; cursor: pointer; }
+.shell { display: grid; grid-template-columns: 340px 1fr; min-height: 0; }
+.sidebar { padding: 24px; background: var(--panel); border-right: 1px solid rgba(255,255,255,.08); }
+.sidebar h1 { margin: 0 0 12px; font-size: 24px; }
+.sidebar p { color: var(--muted); line-height: 1.55; }
+.card { border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.04); border-radius: 18px; padding: 16px; margin-top: 16px; }
+.card h2 { margin: 0 0 10px; font-size: 16px; }
+.card ul { margin: 0; padding-left: 18px; color: var(--muted); line-height: 1.7; }
+.game-wrap { min-height: 0; display: grid; place-items: center; padding: 24px; background: radial-gradient(circle at 50% 20%, rgba(98,195,112,.18), transparent 34%), #0c1321; }
+.game-frame { width: min(100%, 1024px); aspect-ratio: 16/9; border-radius: 18px; overflow: hidden; border: 1px solid rgba(255,255,255,.12); box-shadow: 0 24px 80px rgba(0,0,0,.35); background: #07101d; }
+#valefun-game { width: 100%; height: 100%; }
+@media (max-width: 900px) { .shell { grid-template-columns: 1fr; } .sidebar { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.08); } }

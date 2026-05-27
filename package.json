@@ -1,0 +1,16 @@
+{
+  "name": "valefun",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --filter @valefun/web dev",
+    "build": "pnpm --filter @valefun/web build",
+    "lint": "pnpm --filter @valefun/web lint",
+    "typecheck": "pnpm --filter @valefun/web typecheck"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

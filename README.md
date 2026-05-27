@@ -1,25 +1,26 @@
 # Valefun
 
-Valefun is a 2D pixel village-life game prototype built with Godot.
+Valefun is being rewritten as a web-native 2D pixel village-life game.
 
-## Direction
+Players will connect a wallet, choose a character, receive a starter house inside an owner-managed valley, then farm, fish, mine, craft, trade, upgrade their home, and interact with other online players.
 
-Players connect with a wallet, choose a character, receive a starter house inside an owner-managed valley, then farm, fish, mine, craft, trade, upgrade their home, and interact with other online players.
+## Repository Layout
+
+- `apps/web` — new Next.js + Phaser web game app.
+- `packages/shared` — shared game types/constants later.
+- `legacy-godot` — preserved Godot prototype for reference.
+- `legacy-screenshots` — old screenshots for reference.
+- `docs` — architecture and rewrite notes.
+
+## Commands
+
+```bash
+pnpm install
+pnpm dev
+pnpm build
+pnpm typecheck
+```
+
+## Core Direction
 
 Core gameplay should remain fast and off-chain. Blockchain ownership is reserved for important assets such as master land, house deeds, rare cosmetics, event trophies, and marketplace items.
-
-## MVP Target
-
-1. Wallet Connect login/sign-in.
-2. Male/female character selection.
-3. Starter house assignment inside the owner valley.
-4. Farming, fishing, mining, inventory, and warehouse selling.
-5. Vale Coin soft currency.
-6. Real-time multiplayer presence/chat.
-7. Admin dashboard for warehouse prices, demand, and events.
-
-## Tech Notes
-
-- Engine: Godot 3.x project format (`config_version=3`).
-- Main menu scene: `res://menus/main/MainMenu.tscn`.
-- Main game scene: `res://Game.tscn`.
